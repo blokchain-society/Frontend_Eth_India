@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useState ,useEffect} from "react";
-import Logo from "../public/log.png";
+import { useState ,useEffect,useContext} from "react";
+import Logo from "../public/MB.png";
 import GlowingBtn from "../utils/glowingBtn";
-
+import { DataContext } from "../utils/Context";
 const HamIcon = () => {
   return (
     <svg
@@ -32,6 +32,7 @@ const HamIcon = () => {
 export default function Navbar() {
   const [isNavOpen, setNavOpen] = useState(false);
   const [getDimensions,setDimensions] = useState("");
+  const {walletConnection,currentAccount} = useContext(DataContext);
   
   // useEffect(()=>{
   //   function getDimensions(){
@@ -49,9 +50,9 @@ export default function Navbar() {
       <nav className="bg-dk-bluish h-20 flex flex-row items-center px-8 justify-between ">
 
         <div className="lg:flex lg:flex-row lg:justify-between ">
-        <Image src={Logo} width={180} height={50} alt="logo" />
+        <Image src={Logo} width={120} height={60} alt="logo" />
 
-        <ul className="hidden font-header lg:flex lg:flex-row lg:px-8 mt-3 ">
+        <ul className="hidden font-header lg:flex lg:flex-row lg:px-8 mt-4 ">
         <li className="pl-2 cursor-pointer mx-2 "><Link href="#">Home</Link></li>
             <li className="pl-2 cursor-pointer mx-2 "><Link href="#vision">Vision</Link></li>
        
@@ -64,7 +65,7 @@ export default function Navbar() {
         </button>
         
         <div className="hidden lg:flex lg:flex-row lg:justify-between">
-          <GlowingBtn btnName="Connect Wallet" />
+        <Link href="/launch" className="text-center text-white bg-gradient-to-r p-3 bg-300 border-2 border-black p-4 rounded-full">Launch Dapp</Link>
         </div>
       </nav>
 

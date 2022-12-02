@@ -14,6 +14,7 @@ const ContextProvider = ({children}) => {
             console.log(accs);
             setCurrentAccount(accs[0]);
             setIsConnect(false);
+            console.log("Hello")
         } catch (error) {
             console.log(error);
             setIsConnect(false);
@@ -25,7 +26,7 @@ const ContextProvider = ({children}) => {
         walletConnection();
     },[])
   return (
-    <DataContext.Provider value={{}}>
+    <DataContext.Provider value={{walletConnection,currentAccount}}>
         {children}
     </DataContext.Provider>
   )
