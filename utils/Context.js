@@ -22,9 +22,7 @@ const ContextProvider = ({children}) => {
         }
     }
 
-    useEffect(()=>{
-        walletConnection();
-    },[])
+   
   return (
     <DataContext.Provider value={{walletConnection,currentAccount}}>
         {children}
