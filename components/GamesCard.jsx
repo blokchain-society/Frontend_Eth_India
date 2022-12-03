@@ -19,7 +19,7 @@ export default function GamesCard({ gameName, imgSrc }) {
         </style>
       </div>
       
-       <h2 className="font-fontDM text-2xl text-white" style={{marginTop:"175px !important"}}><Link href="/minting">{gameName}</Link> </h2>
+       <h2 className="font-fontDM text-2xl text-white" style={{marginTop:"175px !important"}}><Link href="/auth">{gameName}</Link> </h2>
        {/* <Link href="/minting" className="mt-12">GO</Link> */}
     
       

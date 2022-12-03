@@ -18,15 +18,15 @@ const revise = new Revise({auth: AUTH_TOKEN});
     //         console.log(error)
     //     }
     // }
-  const mintNft = async()=>{
+  const mintNft = async(_name,_image,_tokenId,_desc)=>{
     try {
         const tokenData ={
-            "name": "Lamborghini",
-            "image": "string",
-            "tokenId": "37781973573605582095880511607555594450371183149967330698384866539359313068033",
-            "description?": "Rare and Royal .... Just for testing purpose of Metaborrow"
+            "name": _name,
+            "image": _image,
+            "tokenId":_tokenId,
+            "description?": _desc
           };
-          const properties=[{fuel:50},{game:"gta 5"}]
+        const properties=[{fuel:50},{game:"gta 5"}]
         const newNFT = await revise.addNFT(tokenData, properties);
         
     } catch (error) {
@@ -108,7 +108,12 @@ const revise = new Revise({auth: AUTH_TOKEN});
     },[])
    
   return (
-    <DataContext.Provider value={{walletConnection,currentAccount,isConnect}}>
+    <DataContext.Provider value={{walletConnection,currentAccount,isConnect,mintNft,
+        getchSingleNft,
+        getAllNftsByCollectionId,
+        setName,
+        setDesc,
+        setImage}}>
         {children}
     </DataContext.Provider>
   )

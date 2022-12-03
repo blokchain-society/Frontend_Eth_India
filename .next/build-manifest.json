@@ -30,10 +30,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/launch": [
+    "/auth": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/launch.js"
+      "static/chunks/pages/auth.js"
     ],
     "/minting": [
       "static/chunks/webpack.js",
