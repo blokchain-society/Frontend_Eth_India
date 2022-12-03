@@ -11,7 +11,7 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
-
+          <title>Meta-Borrow</title>
           <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
         </Head>
         <body>

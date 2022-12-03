@@ -12,6 +12,7 @@ import god from '../public/games/god.jpeg';
 import star from '../public/games/star.jpeg';
 import fortnite from '../public/games/fortnite.jpeg'
 import illuvion from '../public/games/illuvion.jpeg';
+import Link from 'next/link';
 const gamesList = [
    
     {
@@ -76,7 +77,7 @@ export default function GamesList(){
         {
             gamesList.map(el=>{
                 return(
-                    <GamesCard imgSrc={el.imgSrc} gameName={el.gameName} key={el.gameName} />
+                   <GamesCard imgSrc={el.imgSrc} gameName={el.gameName} key={el.gameName} />
                 )
             })
         }

@@ -54,7 +54,7 @@ export default function Recent(){
              <h2 className="font-header font-bold text-xl pt-4">RECENT NEWS</h2>
          </section>
 
-         <div className="grid grid-cols-2">
+         <div className="grid grid-cols-2 ">
          {
              cardArr.map(el=> {
                  return(

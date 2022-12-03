@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Link from "next/link";
 export default function GamesCard({ gameName, imgSrc }) {
   return (
     <div className="relative w-full h-[10rem] rounded-lg m-8">
@@ -18,19 +18,11 @@ export default function GamesCard({ gameName, imgSrc }) {
           `}
         </style>
       </div>
-      <div className="text-wrapper font-bold">
-        <style jsx>
-          {`
-            .text-wrapper {
-              z-index: 2;
-              padding-top: 5rem;
-              padding-left: 1rem;
-            }
-          `}
-        </style>
-        <h2 className="font-fontDM text-2xl z-2 mt-14 text-white">{gameName}</h2>
-        <p className="font-fontDM"></p>
-      </div>
+      
+       <h2 className="font-fontDM text-2xl text-white" style={{marginTop:"175px !important"}}><Link href="/minting">{gameName}</Link> </h2>
+       {/* <Link href="/minting" className="mt-12">GO</Link> */}
+    
+      
     </div>
   );
 }
