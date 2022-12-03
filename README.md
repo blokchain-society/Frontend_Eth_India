@@ -9,5 +9,23 @@ MetaBorrow unlocks an untapped secondary market around in-game assets where both
 Welcome to the Gaming DeFi future!
 
 ![Screenshot](METABORROW_FLOW.png)
+As the user lands on our application, he/she can view or lend/borrow their digital gaming assets. For renting and borrowing the gaming NFT, the user need to click on "Launch Dapp". After clicking the button the user needs to connect the web application with the MetaMask account. Thereby,the user has three options: Rent, Lend and Dashboard.
 
+Lender specifies a number of parameters
+a. maximum number of days that his/her gaming NFT can be rented out for 
+--why we are including this? we don't want renters to hold on to the gaming NFTs for too long
+b. daily rent price
+c. Gaming NFT price. In case the gaming NFT is not returned, the lender is entitled to claim the collateral.
+d. Payment token. The lender receives rent payments in this token. Collateral is priced in this token, as well.
+
+Lender lends NFT(s)
+Renter agrees to the terms and pays full collateral and all of the rent up front
+
+Renter returns in time
+4a. Unused rent amounts + collateral gets returned to the renter
+4b. NFT(s) is/are returned to the lender and deposited back into the ReNFT contract why? so that the lender does not have to re-deposit the NFT(s) back for lending
+
+Renter does no return in time
+5a. Lender claims the collateral
+5b. Collateral along with full rent payment gets sent to the lender
 
