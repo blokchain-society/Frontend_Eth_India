@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Astro from "../public/vision/Astronaut.webp";
+import Astro from "../public/gamer.png";
 import Rocket from "../public/vision/rocket.webp";
 
 export default function Vision() {
@@ -146,15 +146,17 @@ export default function Vision() {
       <div className="flex-1 pr-8 lg:flex-1">
         <h1 className="text-4xl pb-4 font-bold">Vision</h1>
         <article className="text-xl lg:pr-20">
-        <p className="pb-8"> MetaBorrow’s mission is to accelerate the transition of games
-          towards a decentralised future by lending and borrowing the gaming assets using the staking mechanisms.</p> 
+        <p className="pb-8"> MetaBorrow’s mission is to accelerate the transition of crypto and non-crypto games towards a decentralised future by lending and borrowing the gaming assets using the staking mechanisms.
+
+
+
+</p> 
           
-        <p className="sm:flex-1 pb-8">  MetaBorrow is committed to enhancing
-          the gamer experience and continuously pushing the boundary between the
-          real world and Metaverse.</p> 
-          
-        <p>  By empowering players and investors towards
-          an openly accessible, independent and decentralised marketplace. </p>
+        <p className="sm:flex-1 pb-8">  MetaBorrow is committed to empowering the gaming experience by helping gamers generate income through their gaming assets and save money at the same time by letting gamers rent in-game assets instead of buying them.
+</p> 
+<p className="sm:flex-1 pb-8">MetaBorrow unlocks an untapped secondary market around in-game assets where both the game developers and gamers generate profit through an open, transparent and decentralised revenue sharing model on every transactions done in an in-game asset on the platform.
+</p>
+        <p>  Welcome to the Gaming DeFi future! </p>
         </article>
       </div>
 

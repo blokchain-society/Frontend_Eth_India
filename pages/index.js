@@ -9,6 +9,7 @@ import Recent from '../components/Recent'
 import Vision from '../components/Vision'
 import Footer from '../components/Footer'
 
+
 export default function Home() {
   return (
     <>
@@ -17,7 +18,6 @@ export default function Home() {
      <Vision />
      <GamesList />
      <Recent />
-     
      <Footer />
     </>
   )

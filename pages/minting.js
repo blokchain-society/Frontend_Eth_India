@@ -104,7 +104,7 @@ const Mint = () => {
             animate-glow bg-300 border-2 border-black p-3 px-5 mt-4 rounded-full" onClick={async ()=>{
                 setIsLoading(true);
                 console.log(item)
-                await mintNft(item.name,item.image,item.tokenId,item['description?']);
+                await mintNft(item.name,item.img,item.tokenId,item['description?'],item.properties);
                 setIsLoading(false);
 
             }} style={{position:"absolute",bottom:"-26px"}}> Mint</button>
