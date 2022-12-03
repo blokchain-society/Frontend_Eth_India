@@ -14,7 +14,7 @@ const ContextProvider = ({children}) => {
             console.log(accs);
             setCurrentAccount(accs[0]);
             setIsConnect(false);
-            console.log("Hello")
+            
         } catch (error) {
             console.log(error);
             setIsConnect(false);
