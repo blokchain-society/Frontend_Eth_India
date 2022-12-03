@@ -52,7 +52,7 @@ export default function Navbar() {
         <div className="lg:flex lg:flex-row lg:justify-between ">
         <Image src={Logo} width={120} height={60} alt="logo" />
 
-        <ul className="hidden font-header lg:flex lg:flex-row lg:px-8 mt-4 ">
+        <ul className="hidden font-header lg:flex lg:flex-row lg:px-8 mt-4">
         <li className="pl-2 cursor-pointer mx-2 "><Link href="#">Home</Link></li>
             <li className="pl-2 cursor-pointer mx-2 "><Link href="#vision">Vision</Link></li>
        
@@ -65,7 +65,8 @@ export default function Navbar() {
         </button>
         
         <div className="hidden lg:flex lg:flex-row lg:justify-between">
-        <Link href="/launch" className="text-center text-white bg-gradient-to-r p-3 bg-300 border-2 border-black p-4 rounded-full">Launch Dapp</Link>
+        <button className="font-bold font-fontDM font-xl  text-center text-white bg-gradient-to-r from-btn-blue via-btn-purple to-btn-blue   
+        animate-glow bg-300 border-2 border-black p-3 px-5 mt-1 rounded-full"> <Link href="/launch">Launch Dapp</Link> </button>
         </div>
       </nav>
 

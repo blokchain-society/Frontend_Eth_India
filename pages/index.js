@@ -1,7 +1,7 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import CardsWrapper from '../components/CardsWrapper'
-import Community from '../components/Community'
+// import Head from 'next/head'
+// import Image from 'next/image'
+// import CardsWrapper from '../components/CardsWrapper'
+// import Community from '../components/Community'
 import GamesList from '../components/GamesList'
 import HeroSection from '../components/HeroSection'
 import Navbar from '../components/Navbar'
@@ -17,7 +17,7 @@ export default function Home() {
      <Vision />
      <GamesList />
      <Recent />
-     <Community />
+     
      <Footer />
     </>
   )

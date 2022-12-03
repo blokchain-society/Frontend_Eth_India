@@ -28,8 +28,8 @@ export default function GamesCard({ gameName, imgSrc }) {
             }
           `}
         </style>
-        <h2 className="font-fontDM text-2xl z-2">{gameName}</h2>
-        <p className="font-fontDM">MMORPG</p>
+        <h2 className="font-fontDM text-2xl z-2 mt-14 text-white">{gameName}</h2>
+        <p className="font-fontDM"></p>
       </div>
     </div>
   );

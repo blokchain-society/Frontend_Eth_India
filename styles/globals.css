@@ -5,8 +5,8 @@
 @tailwind utilities;
 
 @font-face{
-  font-family:"Locust";
-  src:url("/fonts/Locust.ttf");
+  /* font-family:"Locust";
+  src:url("/fonts/Locust.ttf"); */
   font-style:normal;
   font-weight:300;
 }

@@ -9,12 +9,20 @@ const cardArr = [
     {
         imgSrc:recentTwo,
         content:"Syncity NFT Game Review"
+    },{
+        imgSrc:recentOne,
+        content:"NFT Games changing way of playing games"
     },
+    {
+        imgSrc:recentTwo,
+        content:"Syncity NFT Game Review"
+    },
+    
 ]
 
 const RecentCard = ({imgSrc,content}) => {
     return(
-        <div className="bg-white p-4 m-4 md:p-8 md:m-8 rounded-lg ">
+        <div className="bg-white  p-4 m-4 md:p-8 md:m-8 rounded-lg ">
         <div className="imgWrapper ">
             <style jsx>
                 {
@@ -42,11 +50,11 @@ export default function Recent(){
     return(
      <div className="flex flex-col items-center bg-vision p-12">
          <section className="text-center">
-             <p>/ WHATS NEW /</p>
+            
              <h2 className="font-header font-bold text-xl pt-4">RECENT NEWS</h2>
          </section>
 
-         <div className="flex flex-col items-center md:flex-row md:justify-between">
+         <div className="grid grid-cols-2">
          {
              cardArr.map(el=> {
                  return(

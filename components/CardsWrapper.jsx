@@ -2,16 +2,16 @@ import Card from "./Cards";
 
 const cardsInfo = [
   {
-      header:"Empower",
-      content:"MetaBorrow is a blockchain-based Gaming NFT lending and borrowing platform powered by Polygon Network."
+      header:"Generate APR% 🚀",
+      content:"MetaBorrow lets you stake your in-game digital assets to generate APR."
   },
   {
-      header:"Excel",
-      content:"Lender claims the collateral along with full rent payment gets sent to the lender"
+      header:"Enhance gaming experience 🔥",
+      content:"Maximize your gaming experience by renting digital assets at low cost."
   },
   {
-      header:"Excite",
-      content:"Unused rent amounts + collateral gets returned to the renter NFT(s) is/are returned to the lender "
+      header:"Yield Farming Opportunities 🦄",
+      content:"Digital asset flipping on rented in-game assets to generate high ROI."
   },
 
 ]

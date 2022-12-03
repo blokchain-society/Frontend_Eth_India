@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "../public/Logo.webp";
+import Logo from "../public/MB.png";
 import twitIcon from "../public/social/Twitter.webp";
 import linkIcon from "../public/social/linkedin.webp";
 
@@ -17,7 +17,7 @@ export default function Footer() {
     <div className="bg-vision p-8 lg:p-12 lg:flex lg:flex-row lg:justify-between
     ">
       <div className="">
-        <Image src={Logo} width={218} height={36} alt="Logo" />
+        <Image src={Logo} width={150} height={80} alt="Logo" />
         <p className="font-fontDM pt-2">
           A blockchain-based gaming NFT lending and borrowing platform. Allowing
           players,<br /> lenders and guilds to lend & borrow NFTs in a trustless
@@ -35,7 +35,7 @@ export default function Footer() {
 
       <div className="flex flex-col font-fontDM pt-8">
         <h2 className="font-bold font-xl">Follow Us</h2>
-        <span className="flex flex-row items-center">
+        <span className="flex flex-row items-center justify-content-between">
           <Image src={twitIcon}  width={24} height={24} alt="twit" />
           <FooterLink linkName="Twitter" />
         </span>
