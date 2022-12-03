@@ -7,3 +7,7 @@ We are committed to empowering the gaming experience by helping gamers generate 
 MetaBorrow unlocks an untapped secondary market around in-game assets where both the game developers and gamers generate profit through an open, transparent and decentralised revenue sharing model on every transactions done in an in-game asset on the platform.
 
 Welcome to the Gaming DeFi future!
+
+![Screenshot](METABORROW_FLOW.png)
+
+
