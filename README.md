@@ -1,43 +1,9 @@
 ## METABORROW
 ![Screenshot](MetaBorrow.png)
 
-clone of the website galaxyguild.com
+MetaBorrow’s mission is to accelerate the transition of crypto and non-crypto games towards a decentralised future by lending and borrowing the gaming assets using the staking mechanisms.
 
-Collation of all the information that I retreive from the website.
+We are committed to empowering the gaming experience by helping gamers generate income through their gaming assets and save money at the same time by letting gamers rent in-game assets instead of buying them. 
+MetaBorrow unlocks an untapped secondary market around in-game assets where both the game developers and gamers generate profit through an open, transparent and decentralised revenue sharing model on every transactions done in an in-game asset on the platform.
 
-- hsl(221deg 13% 45%)
-- #010929 (dark bluish used for most of the background)
-hsl(220deg 42% 23%)
-
-
----
-
-## List of Animations and Transitions observed 
-
-- Navbar is sticky after scrolling and has a subtle animation to it. 
-- the stickyness for this one is only applicable for the desktop one but will try to keep it holistically responsive. 
-
-linear-gradient(90deg, hsl(181deg 100% 44%), hsl(299deg 100% 50%), hsl(181deg 100% 44%));
-
-glow 8s linear infinite;
-
-100% {
-    background-position: 300%;
-    background-position-x: 300%;
-    background-position-y: center;
-}
-
-padding for every section is p-8
-
-
-dimensions for this vision image thingy. right. 
-
--> for mobile 
-
-rocket: 193px , 183px 
-moving boy: 233 , 403 
-
--> for  
-moving boy: 318 , 550
-388, 368 
- 
+Welcome to the Gaming DeFi future!
