@@ -1,8 +1,11 @@
 import React, { createContext, useEffect, useState } from 'react'
 import { getWeb3 } from './web3';
 import { Revise } from 'revise-sdk';
+import getInstance from './contract';
+import * as PushAPI from "@pushprotocol/restapi";
 // import { toast } from 'react-toastify';
 import axios from 'axios';
+import { ethers } from 'ethers';
 export const DataContext = createContext();
 const ContextProvider = ({ children }) => {
 
@@ -20,6 +23,36 @@ const ContextProvider = ({ children }) => {
     //         console.log(error)
     //     }
     // }
+    const PK = 'eb9a78681720b16e05de60a0ec4bba55750f342cc681c55983e3aabeb5fc7a20'; // channel private key
+    const Pkey = `0x${PK}`;
+    const signer = new ethers.Wallet(PK);
+
+    const sendNotification = async () => {
+        try {
+
+            const apiResponse = await PushAPI.payloads.sendNotification({
+                signer,
+                type: 3, // target
+                identityType: 2, // direct payload
+                notification: {
+                    title: `Notification Regarding your rented asset`,
+                    body: `Please, return your rent as soon as possible before deadline`
+                },
+                payload: {
+                    title: `[sdk-test] payload title`,
+                    body: `sample msg body`,
+                    cta: '',
+                    img: ''
+                },
+                recipients: 'eip155:5:0x59EB391b36e1Bf80d1eEeF56B027eb2721760b31', // recipient address
+                channel: 'eip155:5:0x7D5e967Fa343C6c094F72925597Ec620caaC0e23', // your channel address
+                env: 'staging'
+            });
+            console.log('API repsonse: ', apiResponse);
+        } catch (err) {
+            console.error('Error: ', err);
+        }
+    }
     const mintNft = async (_name, _image, _tokenId, _desc, props) => {
         try {
             const tokenData = {
@@ -50,15 +83,15 @@ const ContextProvider = ({ children }) => {
     const getAllNftsByCollectionId = async () => {
         try {
             let nfts = await revise.fetchNFTs();
-            console.log("nfts",nfts)
+            console.log("nfts", nfts)
         } catch (error) {
             console.log(error)
         }
     }
-    const setProperties= async (nftId="",prop="")=>{
+    const setProperties = async (nftId = "", prop = "") => {
         try {
-            let res = await (await revise.updateNFT("94c768e1-2356-487a-9899-bc4456921f22")).setProperty('availableMag',"20");
-            console.log("res",res)
+            let res = await (await revise.updateNFT("94c768e1-2356-487a-9899-bc4456921f22")).setProperty('availableMag', "20");
+            console.log("res", res)
         } catch (error) {
             console.log(error)
         }
@@ -113,12 +146,17 @@ const ContextProvider = ({ children }) => {
     }
     useEffect(() => {
         // getchSingleNft();
-        getAllNftsByCollectionId();
+        // getAllNftsByCollectionId();
+        (async () => {
+            let contract = await getInstance();
+            console.log("methods",contract.methods)
+        })();
         // addCollection("GTA-5","https://testnets.opensea.io/collection/metaborrow");
         walletConnection();
+        sendNotification();
 
     }, [])
-    setProperties();
+    // setProperties();
     return (
         <DataContext.Provider value={{
             walletConnection,

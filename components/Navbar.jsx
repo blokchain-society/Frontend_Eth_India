@@ -66,7 +66,7 @@ export default function Navbar() {
         
         <div className="hidden lg:flex lg:flex-row lg:justify-between">
         <button className="font-bold font-fontDM font-xl  text-center text-white bg-gradient-to-r from-btn-blue via-btn-purple to-btn-blue   
-        animate-glow bg-300 border-2 border-black p-3 px-5 mt-1 rounded-full"> <Link href="/launch">Launch Dapp</Link> </button>
+        animate-glow bg-300 border-2 border-black p-3 px-5 mt-1 rounded-full"> <Link href="/launch">Launch DApp</Link> </button>
         </div>
       </nav>
 

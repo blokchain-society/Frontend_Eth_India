@@ -101,7 +101,7 @@ const LaunchApp = () => {
                 <li className="pl-2 cursor-pointer mx-2 " onClick={() => {
                     setCategory("lend");
                 }}>Lend</li>
-                <li className="pl-2 cursor-pointer mx-2 ">Dashboard</li>
+                <li className="pl-2 cursor-pointer mx-2 "><Link href="/dashboard">Dashboard</Link></li>
             </ul>
         </div>
             {currentAccount ? <GlowingBtn btnName={currentAccount} /> : <GlowingBtn btnName="Connect Wallet" onClick={() => {

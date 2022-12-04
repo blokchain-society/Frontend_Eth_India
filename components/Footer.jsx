@@ -19,9 +19,7 @@ export default function Footer() {
       <div className="">
         <Image src={Logo} width={150} height={80} alt="Logo" />
         <p className="font-fontDM pt-2">
-          A blockchain-based gaming NFT lending and borrowing platform. Allowing
-          players,<br /> lenders and guilds to lend & borrow NFTs in a trustless
-          manner.
+        Welcome to the Gaming DeFi future!
         </p>
       </div>
 
