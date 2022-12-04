@@ -41,5 +41,8 @@ Renter does no return in time
 
 
 
-#WALL OF GAMES SECTION
+# WALL OF GAMES SECTION
 In the wall of games section, we have 12 games in which if you click any of your favourite game, it will lead you to an authorization page and it will display you all of your gaming assets you possess.. If you click Mint NFT, there will be a creation of Dynamic NFT in which once deployed, you don't need to deploy it again and again when changes occurs in the data. If changes occur, it will automatically make the new changes in the NFTs!
+
+
+
